@@ -1,0 +1,26 @@
+@charset "UTF-8";
+:root {
+  --color-black: #333333;
+  --color-white: #ffffff;
+  --color-main: #; /* 25% */
+  --color-base: #; /* 70% */
+  --color-accent: #; /* 5% */
+
+  @media (min-width: 1080px) {
+    --is-md: true; /* Medium: ≥ 1080px */
+  }
+}
+
+.sp-none {
+  display: none !important;
+}
+
+@container style(--is-md) {
+  .sp-none {
+    display: block !important;
+  }
+
+  .pc-none {
+    display: none !important;
+  }
+}
