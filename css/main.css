@@ -2,9 +2,9 @@
 :root {
   --color-black: #333333;
   --color-white: #ffffff;
-  --color-main: #; /* 25% */
-  --color-base: #; /* 70% */
-  --color-accent: #; /* 5% */
+  --color-main: #849aa0; /* 25% */
+  --color-base: #d7d5c6; /* 70% */
+  --color-accent: #d7ad89; /* 5% */
 
   @media (min-width: 1080px) {
     --is-md: true; /* Medium: ≥ 1080px */
