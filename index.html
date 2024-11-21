@@ -9,20 +9,21 @@
   </head>
   <body>
     <!-- ヘッダー -->
-    <header class="header">
-      <div></div>
-      <div>
-        <h1></h1>
+    <header class="header grid">
+      <div class="header__logo"><img src="" alt="" /></div>
+      <div class="cell">
+        <h1 class="title">Portfolio Site for Yui</h1>
       </div>
 
       <!-- PC用ナビゲーション -->
-      <div class="sp-none">
+      <div class="sp-none cell">
         ナビゲーション
         <nav>
           <ul>
-            <li class="nav-item"><a href=""></a></li>
-            <li class="nav-item"><a href=""></a></li>
-            <li class="nav-item"><a href=""></a></li>
+            <li class="nav-item"><a href="#">ABOUT</a></li>
+            <li class="nav-item"><a href="#">WORKS</a></li>
+            <li class="nav-item"><a href="#">SKILLS</a></li>
+            <li class="nav-item"><a href="#">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -32,9 +33,10 @@
         ナビゲーション|スマホ
         <nav>
           <ul>
-            <li class="nav-item"><a href=""></a></li>
-            <li class="nav-item"><a href=""></a></li>
-            <li class="nav-item"><a href=""></a></li>
+            <li class="nav-item-mb"><a href="#">ABOUT</a></li>
+            <li class="nav-item-md"><a href="#">WORKS</a></li>
+            <li class="nav-item-md"><a href="#">SKILLS</a></li>
+            <li class="nav-item-md"><a href="#">CONTACT</a></li>
           </ul>
         </nav>
         <div class="toggle_btn">
@@ -45,15 +47,24 @@
       </div>
     </header>
 
-    <section class="section about">
-      <div class="content">about</div>
-    </section>
-    <section class="section work">
-      <div class="content">work</div>
-    </section>
-    <section class="section contact">
-      <div class="content">contact</div>
-    </section>
+    <main class="main">
+      <section class="section hero"></section>
+      <section class="section about">
+        <div class="content-area">
+          <div></div>
+        </div>
+      </section>
+      <section class="section work">
+        <div class="content-area">work</div>
+      </section>
+      <section class="section skill">
+        <div class="content-area">skill</div>
+      </section>
+      <section class="section contact">
+        <div class="content-area">contact</div>
+      </section>
+    </main>
+
     <footer class="footer">
       footer
       <p>&copy;</p>
