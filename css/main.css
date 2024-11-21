@@ -6,6 +6,9 @@
   --color-base: #d7d5c6; /* 70% */
   --color-accent: #d7ad89; /* 5% */
 
+  --font-mincho: ;
+  --font-en: ;
+
   @media (min-width: 1080px) {
     --is-md: true; /* Medium: ≥ 1080px */
   }
