@@ -42,6 +42,8 @@ header {
 }
 
 a {
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 header.grid {
@@ -59,6 +61,15 @@ h1.title {
 .header__logo {
 }
 
+nav {
+}
+
+.nav-item {
+}
+
+.nav-item-md {
+}
+
 @media screen and (max-width: 1079px) {
   .menu-btn {
     display: none;
@@ -69,15 +80,46 @@ h1.title {
     opacity: 1;
   }
 
+  nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -15rem;
+    bottom: 0;
+    width: 14rem;
+    background: var(--color-main);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  .menu-btn:checked ~ nav {
+    left: 0;
+    opacity: 1;
+  }
+
   nav ul {
+    padding: 1.5rem;
   }
 
   nav ul li {
     position: relative;
+    margin: 0;
+    border-bottom: 1px solid var(--color-white);
   }
 
   nav ul li a {
     display: block;
+    color: var(--color-white);
+    font-size: 1rem;
+    transition-duration: 0.2s;
+  }
+
+  nav ul li a:hover {
+    color: var(--color-accent);
+    /* background: var(--color-base); */
   }
 
   .toggle_btn {
@@ -87,6 +129,7 @@ h1.title {
     right: 30px;
     width: 30px;
     height: 30px;
+    transition: all 0.5s;
     cursor: pointer;
     z-index: 3;
   }
@@ -114,7 +157,7 @@ h1.title {
   }
 
   .menu-btn:checked ~ .toggle_btn span {
-    background-color: var(--color-white);
+    background-color: var(--color-black);
   }
 
   .menu-btn:checked ~ .toggle_btn span:nth-child(1) {
@@ -129,7 +172,7 @@ h1.title {
     transform: translateY(-10px) rotate(315deg);
   }
 
-  #mask {
+  /* #mask {
     display: none;
   }
 
@@ -143,7 +186,7 @@ h1.title {
     background: var(--color-main);
     z-index: 2;
     cursor: pointer;
-  }
+  } */
 }
 
 .main {
