@@ -59,6 +59,93 @@ h1.title {
 .header__logo {
 }
 
+@media screen and (max-width: 1079px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-btn:checked ~ .menu {
+    left: 0;
+    opacity: 1;
+  }
+
+  nav ul {
+  }
+
+  nav ul li {
+    position: relative;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+
+  .toggle_btn {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .toggle_btn span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--color-black);
+    border-radius: 4px;
+  }
+
+  .toggle_btn span:nth-child(1) {
+    top: 4px;
+  }
+
+  .toggle_btn span:nth-child(2) {
+    top: 14px;
+  }
+
+  .toggle_btn span:nth-child(3) {
+    bottom: 4px;
+  }
+
+  .menu-btn:checked ~ .toggle_btn span {
+    background-color: var(--color-white);
+  }
+
+  .menu-btn:checked ~ .toggle_btn span:nth-child(1) {
+    transform: translateY(10px) rotate(-315deg);
+  }
+
+  .menu-btn:checked ~ .toggle_btn span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-btn:checked ~ .toggle_btn span:nth-child(3) {
+    transform: translateY(-10px) rotate(315deg);
+  }
+
+  #mask {
+    display: none;
+  }
+
+  .menu-btn:checked ~ #mask {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-main);
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
 .main {
 }
 
