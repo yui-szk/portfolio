@@ -426,7 +426,7 @@ nav ul li a:hover {
   margin: 0;
 }
 
-.skill__chart-wrapper span {
+.skill__chart-bar {
   display: inline-block;
   padding-right: 1rem;
   border-radius: 2px;
@@ -435,6 +435,9 @@ nav ul li a:hover {
   line-height: 2.5rem;
   text-align: right;
   white-space: nowrap;
+}
+
+.skill__chart-animate {
   animation: bar-chart 1.2s ease;
 }
 
@@ -476,4 +479,14 @@ nav ul li a:hover {
   color: var(--color-base);
   margin-top: 5rem;
   font-size: 0.5rem;
+}
+
+.scroll-up {
+  transition: 0.5s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.scroll-up.on {
+  transform: translateY(0);
+  opacity: 1;
 }
