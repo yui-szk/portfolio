@@ -224,10 +224,15 @@ nav ul li a:hover {
 /* heroセクション */
 .hero {
   display: flex;
-  height: 80vh;
+  height: 75vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateY(-3rem);
+
+  @container style(--is-md) {
+    height: 90vh;
+  }
 }
 
 .hero h1 {
@@ -354,7 +359,7 @@ nav ul li a:hover {
 }
 
 .work__item-card--text {
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
 }
 
 .work__item-card--skill--wrapper {
