@@ -100,7 +100,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--color-accent);
+  color: var(--color-main);
   transition: all 0.2s;
 }
 
