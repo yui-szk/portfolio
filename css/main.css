@@ -77,6 +77,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  margin: 0;
+  padding-bottom: 1rem;
 
   @container style(--is-sm) {
     font-size: 2.5rem;
@@ -224,6 +226,8 @@ nav ul li a:hover {
 }
 
 .section {
+  margin: 5rem 0;
+  padding: 3rem 0;
 }
 
 .content-area {
@@ -343,6 +347,42 @@ nav ul li a:hover {
 }
 
 .work {
+  background-color: var(--color-accent);
+}
+
+.work__item {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 2rem;
+}
+
+.work__item a {
+}
+
+.work__item-card {
+}
+
+.work__item-card img {
+  width: 100%;
+}
+
+.work__item-card--text {
+  margin: 0.5rem 0;
+}
+
+.work__item-card--skill--wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.work__item-card--skill {
+  background-color: var(--color-main);
+  border-radius: 2px;
+}
+
+.work__item-card--skill p {
+  margin: 0.25rem 1rem;
+  color: var(--color-white);
 }
 
 .contact {
