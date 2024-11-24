@@ -40,6 +40,8 @@ body {
 }
 
 html {
+  height: 100svh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -232,6 +234,9 @@ nav ul li a:hover {
 
 .content-area {
   padding: 0 1.5rem;
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
 
   @container style(--is-md) {
     padding: 0 7rem;
@@ -240,7 +245,6 @@ nav ul li a:hover {
 
 .hero {
   display: flex;
-  width: 100vw;
   height: 90vh;
   flex-direction: column;
   justify-content: center;
