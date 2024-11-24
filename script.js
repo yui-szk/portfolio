@@ -17,3 +17,8 @@ let scrollAnimation = function () {
   });
 };
 window.addEventListener("scroll", scrollAnimation);
+
+// メニューリンクをクリック時にナビゲーションを閉じる
+function hideNav() {
+  document.getElementById("menu-btn").checked = false;
+}
