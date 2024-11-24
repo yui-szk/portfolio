@@ -64,7 +64,7 @@ h1.title {
 
 nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 nav ul li a {
