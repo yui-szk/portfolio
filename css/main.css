@@ -385,6 +385,51 @@ nav ul li a:hover {
   color: var(--color-white);
 }
 
+.skill__chart-wrapper {
+  font-size: 1rem;
+}
+
+.skill__chart-title {
+  font-size: 1.25rem;
+  padding-top: 1rem;
+  color: var(--color-main);
+}
+
+.skill__chart-wrapper > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.skill__chart-wrapper dt {
+  width: 9.5rem;
+  min-width: 3.25rem;
+  color: var(--color-black);
+}
+
+.skill__chart-wrapper dd {
+  width: 100%;
+  margin: 0;
+}
+
+.skill__chart-wrapper span {
+  display: inline-block;
+  padding-right: 1rem;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  line-height: 2.5rem;
+  text-align: right;
+  white-space: nowrap;
+  animation: bar-chart 1.2s ease;
+}
+
+@keyframes bar-chart {
+  from {
+    width: 0;
+  }
+}
+
 .contact {
   margin-bottom: 0;
   padding-bottom: 1rem;
