@@ -6,8 +6,8 @@
   --color-base: #d7d5c6; /* 70% */
   --color-accent: #d7ad89; /* 5% */
 
-  --font-mincho: ;
-  --font-en: ;
+  --font-mincho: "BIZ UDPMincho", serif;
+  --font-en: "IBM Plex Serif", serif;
 
   @media (min-width: 760px) {
     --is-md: true; /* Medium: ≥ 760px */
@@ -30,6 +30,8 @@
 
 html,
 body {
+  font-family: var(--font-en);
+  color: var(--color-black);
 }
 
 html {
