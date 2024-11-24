@@ -52,7 +52,7 @@ header {
   display: flex;
   position: sticky;
   top: 0;
-  padding: 0.5rem 1.5rem;
+  padding: calc(0.25rem + 10px) 1.5rem;
   align-items: self-end;
   justify-content: space-between;
   z-index: 10;
@@ -61,8 +61,6 @@ header {
     padding: 0.5rem 3rem;
   }
 }
-
-/* TODO: スマホ表示時のpadding調整 */
 
 a {
   text-decoration: none;
@@ -138,7 +136,7 @@ nav ul li a:hover {
 
   nav ul {
     display: block;
-    padding: 4rem 3rem;
+    padding: 5rem 3rem;
   }
 
   nav ul li {
@@ -160,7 +158,7 @@ nav ul li a:hover {
   .toggle_btn {
     display: block;
     position: fixed;
-    top: 30px;
+    top: 1.75rem;
     right: 1.5rem;
     width: 30px;
     height: 30px;
