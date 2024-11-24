@@ -211,6 +211,11 @@ nav ul li a:hover {
 }
 
 .content-area {
+  padding: 0 1.5rem;
+
+  @container style(--is-md) {
+    padding: 0 7rem;
+  }
 }
 
 .hero {
