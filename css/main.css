@@ -85,9 +85,6 @@ h2 {
 }
 
 /* ナビゲーション */
-.nav-wrapper {
-}
-
 nav ul {
   display: flex;
   gap: 1.5rem;
@@ -208,9 +205,6 @@ nav ul li a:hover {
   }
 }
 
-.main {
-}
-
 .section {
   margin: 5rem 0;
   padding: 3rem 0;
@@ -269,9 +263,6 @@ nav ul li a:hover {
 }
 
 /* aboutセクション */
-.about {
-}
-
 .about__item {
   @container style(--is-sm) {
     display: grid;
@@ -334,9 +325,6 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
-.about__item-text--icon {
-}
-
 .about__item-text--icon img {
   margin: 0 0.1rem;
   width: 1.25rem;
@@ -359,12 +347,6 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   gap: 2rem;
-}
-
-.work__item a {
-}
-
-.work__item-card {
 }
 
 .work__item-card img {
