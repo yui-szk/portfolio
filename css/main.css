@@ -46,10 +46,14 @@ header {
   display: flex;
   position: sticky;
   top: 0;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 1.5rem;
   align-items: self-end;
   justify-content: space-between;
   z-index: 10;
+
+  @container style(--is-md) {
+    padding: 0.5rem 3rem;
+  }
 }
 
 /* TODO: スマホ表示時のpadding調整 */
@@ -61,6 +65,14 @@ a {
 
 h1 {
   font-size: 1.25rem;
+
+  @container style(--is-md) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
 
   @container style(--is-md) {
     font-size: 2.5rem;
@@ -140,7 +152,7 @@ nav ul li a:hover {
     display: block;
     position: fixed;
     top: 30px;
-    right: 3rem;
+    right: 1.5rem;
     width: 30px;
     height: 30px;
     transition: all 0.5s;
