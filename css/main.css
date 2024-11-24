@@ -6,8 +6,7 @@
   --color-base: #d7d5c6; /* 70% */
   --color-accent: #d7ad89; /* 5% */
 
-  --font-mincho: "BIZ UDPMincho", serif;
-  --font-en: "IBM Plex Serif", serif;
+  --font: "IBM Plex Serif", serif;
 
   @media (min-width: 760px) {
     --is-sm: true;
@@ -34,7 +33,7 @@
 
 html,
 body {
-  font-family: var(--font-en);
+  font-family: var(--font);
   color: var(--color-black);
   background-color: var(--color-base);
 }
@@ -85,6 +84,7 @@ h2 {
   }
 }
 
+/* ナビゲーション */
 .nav-wrapper {
 }
 
@@ -155,6 +155,7 @@ nav ul li a:hover {
     color: var(--color-accent);
   }
 
+  /* ハンバーガーメニュー */
   .toggle_btn {
     display: block;
     position: fixed;
@@ -226,6 +227,7 @@ nav ul li a:hover {
   }
 }
 
+/* heroセクション */
 .hero {
   display: flex;
   height: 80vh;
@@ -266,6 +268,7 @@ nav ul li a:hover {
   }
 }
 
+/* aboutセクション */
 .about {
 }
 
@@ -343,6 +346,7 @@ nav ul li a:hover {
   }
 }
 
+/* workセクション */
 .work {
   background-color: var(--color-accent);
 }
@@ -386,6 +390,7 @@ nav ul li a:hover {
   color: var(--color-white);
 }
 
+/* skillセクション */
 .skill__chart-wrapper {
   font-size: 1rem;
 }
@@ -440,6 +445,7 @@ nav ul li a:hover {
   }
 }
 
+/* contactセクション */
 .contact {
   margin-bottom: 0;
   padding-bottom: 1rem;
@@ -475,6 +481,7 @@ nav ul li a:hover {
   font-size: 0.75rem;
 }
 
+/* フェードインアニメーション */
 .scroll-up {
   transition: 0.5s ease-in-out;
   transform: translateY(30px);

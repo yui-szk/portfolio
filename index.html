@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/sanitize.css" />
     <link rel="stylesheet" href="./css/main.css" />
 
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap"
       rel="stylesheet"
@@ -20,13 +21,13 @@
     <title>portfolio</title>
   </head>
   <body>
-    <!-- ヘッダー -->
+    <!-- header -->
     <header>
       <div>
         <p class="header__title">YUI SUZUKI</p>
       </div>
 
-      <!-- PC用ナビゲーション -->
+      <!-- pc nav -->
       <div class="sp-none nav-wrapper">
         <nav>
           <ul>
@@ -38,7 +39,7 @@
         </nav>
       </div>
 
-      <!-- スマホ用ナビゲーション -->
+      <!-- sp nav -->
       <div class="pc-none">
         <input type="checkbox" class="menu-btn" id="menu-btn" />
         <label for="menu-btn" class="toggle_btn">
@@ -58,21 +59,26 @@
     </header>
 
     <main class="main">
+      <!-- hero section -->
       <section class="section hero">
         <h1>Yui Suzuki's Portfolio Site</h1>
         <div class="hero__arrow-wrapper"><span class="hero__arrow"></span></div>
       </section>
+
+      <!-- about section -->
       <section class="section about">
         <div class="content-area scroll-up">
           <h2 class="section-title">ABOUT</h2>
           <div class="about__item">
+            <!-- about icon -->
             <div class="about__item-image">
               <div class="about__item-image--shadow"></div>
               <img src="./images/shima_icon.png" alt="image" />
             </div>
+
+            <!-- about text -->
             <div class="about__item-text">
               <p class="about__item-text--main">YUI SUZUKI</p>
-
               <div class="about__item-text--detail">
                 <p>web developer</p>
                 <div class="about__item-text--icon">
@@ -104,10 +110,13 @@
           </div>
         </div>
       </section>
+
+      <!-- work section -->
       <section class="section work">
         <div class="content-area scroll-up">
           <h2 class="section-title">WORKS</h2>
           <div class="work__item">
+            <!-- 弾避けゲーム -->
             <div class="work__item-card scroll-up">
               <a
                 href="https://github.com/yui-szk/of-game"
@@ -124,6 +133,8 @@
                 <div class="work__item-card--skill"><p>C++</p></div>
               </div>
             </div>
+
+            <!-- 太陽系モデル -->
             <div class="work__item-card scroll-up">
               <a
                 href="https://github.com/yui-szk/of_proj"
@@ -140,6 +151,8 @@
                 <div class="work__item-card--skill"><p>C++</p></div>
               </div>
             </div>
+
+            <!-- Todoリスト -->
             <div class="work__item-card scroll-up">
               <a
                 href="https://github.com/yui-szk/next-todo-list"
@@ -147,7 +160,7 @@
                 rel="noopener noreferrer"
               >
                 <img src="./images/todo-list.png" alt="todoリスト" />
-                <p class="work__item-card--text">todoリスト</p>
+                <p class="work__item-card--text">Todoリスト</p>
               </a>
               <div class="work__item-card--skill--wrapper">
                 <div class="work__item-card--skill"><p>TypeScript</p></div>
@@ -159,6 +172,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- LINEbot -->
             <div class="work__item-card scroll-up">
               <a
                 href="https://line.me/R/ti/p/@688bxlez?from=page&accountId=688bxlez"
@@ -174,6 +189,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Notion -->
             <div class="work__item-card scroll-up">
               <a
                 href="https://www.notion.com/ja/templates/yui-dev"
@@ -190,9 +207,13 @@
           </div>
         </div>
       </section>
+
+      <!-- skill section -->
       <section class="section skill">
         <div class="content-area">
           <h2 class="section-title">SKILLS</h2>
+
+          <!-- language -->
           <div>
             <dl class="skill__chart-wrapper">
               <p class="skill__chart-title">language</p>
@@ -216,6 +237,8 @@
               </div>
             </dl>
           </div>
+
+          <!-- framework/library -->
           <div>
             <dl class="skill__chart-wrapper">
               <p class="skill__chart-title">framework/library</p>
@@ -245,6 +268,8 @@
               </div>
             </dl>
           </div>
+
+          <!-- tool -->
           <div>
             <dl class="skill__chart-wrapper">
               <p class="skill__chart-title">tool</p>
@@ -270,6 +295,8 @@
           </div>
         </div>
       </section>
+
+      <!-- contact section -->
       <section class="section contact">
         <div class="content-area scroll-up">
           <h2 class="section-title">CONTACT</h2>
