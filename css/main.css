@@ -408,6 +408,12 @@ nav ul li a:hover {
   color: var(--color-black);
 }
 
+.skill__chart-wrapper dt br {
+  display: block;
+  content: "";
+  margin: -6px 0;
+}
+
 .skill__chart-wrapper dd {
   width: 100%;
   margin: 0;
