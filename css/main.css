@@ -39,11 +39,14 @@ html {
 }
 
 body {
+  min-height: 100vh;
 }
 
 header {
-  padding: 0.5rem 3rem;
   display: flex;
+  position: sticky;
+  top: 0;
+  padding: 0.5rem 3rem;
   align-items: self-end;
   justify-content: space-between;
   z-index: 10;
@@ -57,9 +60,11 @@ a {
 }
 
 h1 {
-}
+  font-size: 1.25rem;
 
-h1.title {
+  @container style(--is-md) {
+    font-size: 2.5rem;
+  }
 }
 
 .nav-wrapper {
@@ -206,6 +211,47 @@ nav ul li a:hover {
 }
 
 .content-area {
+}
+
+.hero {
+  display: flex;
+  width: 100vw;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  transform: translateY(-2rem);
+  color: var(--color-main);
+}
+
+.hero__arrow {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  border-bottom: 2px solid var(--color-main);
+  border-right: 2px solid var(--color-main);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.hero__arrow-wrapper {
+  animation: 3s ease-in-out float infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
 }
 
 .about {
