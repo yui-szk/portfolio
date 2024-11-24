@@ -464,7 +464,7 @@ nav ul li a:hover {
 
 .contact__button {
   background-color: var(--color-accent);
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   border-radius: 2px;
 }
 
@@ -474,6 +474,6 @@ nav ul li a:hover {
 
 .copy-light {
   color: var(--color-base);
-  margin-top: 3rem;
+  margin-top: 5rem;
   font-size: 0.5rem;
 }
