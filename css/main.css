@@ -9,8 +9,8 @@
   --font-mincho: ;
   --font-en: ;
 
-  @media (min-width: 1080px) {
-    --is-md: true; /* Medium: ≥ 1080px */
+  @media (min-width: 760px) {
+    --is-md: true; /* Medium: ≥ 760px */
   }
 }
 
@@ -39,17 +39,18 @@ body {
 }
 
 header {
+  padding: 0.5rem 3rem;
+  display: flex;
+  align-items: self-end;
+  justify-content: space-between;
+  z-index: 10;
 }
+
+/* TODO: スマホ表示時のpadding調整 */
 
 a {
   text-decoration: none;
   color: var(--color-black);
-}
-
-header.grid {
-}
-
-header.grid img {
 }
 
 h1 {
@@ -58,19 +59,25 @@ h1 {
 h1.title {
 }
 
-.header__logo {
+.nav-wrapper {
 }
 
-nav {
+nav ul {
+  display: flex;
+  gap: 1rem;
 }
 
-.nav-item {
+nav ul li a {
+  transition: all 0.2s;
 }
 
-.nav-item-md {
+nav ul li a:hover {
+  color: var(--color-accent);
+  transition: all 0.2s;
 }
 
-@media screen and (max-width: 1079px) {
+/* スマホ用ナビゲーション */
+@media screen and (max-width: 760px) {
   .menu-btn {
     display: none;
   }
@@ -83,10 +90,10 @@ nav {
   nav {
     display: block;
     position: fixed;
-    top: 0;
-    left: -15rem;
-    bottom: 0;
-    width: 14rem;
+    top: -3rem;
+    right: 0;
+    height: 100%;
+    width: 100%;
     background: var(--color-main);
     overflow-x: hidden;
     overflow-y: auto;
@@ -96,42 +103,41 @@ nav {
   }
 
   .menu-btn:checked ~ nav {
-    left: 0;
+    top: 0;
     opacity: 1;
   }
 
   nav ul {
-    padding: 1.5rem;
+    display: block;
+    padding: 4rem 3rem;
   }
 
   nav ul li {
     position: relative;
     margin: 0;
-    border-bottom: 1px solid var(--color-white);
+    padding: 0.5rem;
   }
 
   nav ul li a {
-    display: block;
     color: var(--color-white);
-    font-size: 1rem;
+    font-size: 1.25rem;
     transition-duration: 0.2s;
   }
 
   nav ul li a:hover {
     color: var(--color-accent);
-    /* background: var(--color-base); */
   }
 
   .toggle_btn {
     display: block;
     position: fixed;
     top: 30px;
-    right: 30px;
+    right: 3rem;
     width: 30px;
     height: 30px;
     transition: all 0.5s;
     cursor: pointer;
-    z-index: 3;
+    z-index: 5;
   }
 
   .toggle_btn span {
@@ -142,6 +148,7 @@ nav {
     height: 2px;
     background-color: var(--color-black);
     border-radius: 4px;
+    transition: all 0.5s;
   }
 
   .toggle_btn span:nth-child(1) {
@@ -157,7 +164,7 @@ nav {
   }
 
   .menu-btn:checked ~ .toggle_btn span {
-    background-color: var(--color-black);
+    background-color: var(--color-white);
   }
 
   .menu-btn:checked ~ .toggle_btn span:nth-child(1) {
@@ -172,7 +179,7 @@ nav {
     transform: translateY(-10px) rotate(315deg);
   }
 
-  /* #mask {
+  #mask {
     display: none;
   }
 
@@ -186,13 +193,16 @@ nav {
     background: var(--color-main);
     z-index: 2;
     cursor: pointer;
-  } */
+  }
 }
 
 .main {
 }
 
 .section {
+}
+
+.content-area {
 }
 
 .about {
