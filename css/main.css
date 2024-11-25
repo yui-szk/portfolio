@@ -307,7 +307,6 @@ nav ul li a:hover {
 
 .about__item-text {
   margin: 2rem 0;
-  grid-area: 1/2/1/2;
 }
 
 .about__item-text--main {
