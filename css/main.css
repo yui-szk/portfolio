@@ -464,6 +464,7 @@ nav ul li a:hover {
   transition: all 0.4s;
 }
 
+/* footer */
 footer {
   background-color: var(--color-main);
 }
