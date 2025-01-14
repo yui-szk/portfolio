@@ -1,7 +1,7 @@
 // 対象が画面に入った時にアニメーションする
 let scrollAnimation = function () {
   let scrollAnimationElm = document.querySelectorAll(".scroll-up");
-  let triggerMargin = 200;
+  let triggerMargin = 100;
   scrollAnimationElm.forEach(function (elm) {
     if (window.innerHeight > elm.getBoundingClientRect().top + triggerMargin) {
       elm.classList.add("on");
