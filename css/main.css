@@ -382,7 +382,7 @@ a.work__item-card--skill p:hover {
 }
 
 .work__item-card--skill p {
-  margin: 0.25rem 1rem;
+  margin: 0.25rem 0.75rem;
   color: var(--color-white);
 }
 
