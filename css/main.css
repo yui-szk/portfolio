@@ -371,6 +371,16 @@ nav ul li a:hover {
   border-radius: 2px;
 }
 
+a.work__item-card--skill p {
+  border-bottom: 1px solid var(--color-white);
+}
+
+a.work__item-card--skill p:hover {
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-black);
+  transition: all 0.2s;
+}
+
 .work__item-card--skill p {
   margin: 0.25rem 1rem;
   color: var(--color-white);
