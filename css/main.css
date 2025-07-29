@@ -355,6 +355,8 @@ nav ul li a:hover {
 
 .work__item-card img {
   width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
 }
 
 .work__item-card--text {
